@@ -1,0 +1,316 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 16, ../sass/screen.scss */
+body {
+  margin: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* line 22, ../sass/screen.scss */
+#wrapper {
+  width: 100%;
+}
+
+/* line 26, ../sass/screen.scss */
+#head_wrapper {
+  width: 100%;
+  height: 4rem;
+  background-color: #fa4b2a;
+  position: fixed;
+  top: 0;
+}
+
+/* line 34, ../sass/screen.scss */
+.ham_burg {
+  width: 2rem;
+  height: 1.5rem;
+  text-align: center;
+  margin: 1rem 0.5rem;
+  float: left;
+}
+/* line 40, ../sass/screen.scss */
+.ham_burg .ham_burg_div {
+  margin: 0.3rem;
+  width: 100%;
+  height: 0.3rem;
+  background-color: white;
+}
+
+/* line 48, ../sass/screen.scss */
+.ham_burg:hover {
+  cursor: pointer;
+}
+
+/* line 52, ../sass/screen.scss */
+.logo {
+  width: 60%;
+  display: inline-block;
+}
+
+/* line 57, ../sass/screen.scss */
+.logo_image {
+  width: 100%;
+  height: 4rem;
+}
+
+/* line 62, ../sass/screen.scss */
+.line {
+  width: 0.1rem;
+  height: 3.5rem;
+  float: right;
+  background-color: white;
+  margin: 0.3rem;
+}
+
+/* line 70, ../sass/screen.scss */
+.article {
+  float: right;
+  color: white;
+}
+/* line 73, ../sass/screen.scss */
+.article :hover {
+  cursor: pointer;
+}
+
+/* line 78, ../sass/screen.scss */
+.count {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* line 83, ../sass/screen.scss */
+.slide_left {
+  position: absolute;
+  right: -13.5rem;
+  top: 4rem;
+  bottom: 0px;
+  width: 12.5rem;
+  background-color: #333333;
+  color: white;
+  z-index: 3;
+}
+
+/* line 94, ../sass/screen.scss */
+.slide_right {
+  position: absolute;
+  left: -13.5rem;
+  top: 60px;
+  bottom: 0px;
+  width: 12.5rem;
+  background-color: #333333;
+  color: white;
+  z-index: 2;
+}
+
+/* line 105, ../sass/screen.scss */
+.ham_burg_icon {
+  color: white;
+  float: left;
+}
+
+/* line 110, ../sass/screen.scss */
+#content_wrapper {
+  width: 100%;
+  height: 62.5rem;
+  margin-top: 3rem;
+}
+
+/* line 116, ../sass/screen.scss */
+.breaking_news {
+  width: 100%;
+  height: 11rem;
+}
+
+/* line 121, ../sass/screen.scss */
+.top_news {
+  position: relative;
+  height: 11rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 129, ../sass/screen.scss */
+.top_news::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+}
+
+/* line 139, ../sass/screen.scss */
+#top_1 {
+  background: url(../Images/hooverdam.jpg);
+  background-size: 100% 100%;
+}
+
+/* line 144, ../sass/screen.scss */
+#top_1::after {
+  background: linear-gradient(135deg, #292484, #dc4225);
+}
+
+/* line 148, ../sass/screen.scss */
+.news_heading {
+  padding: 2rem 1rem;
+  font-size: 1.4rem;
+  color: white;
+  text-align: left;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -11rem;
+}
+
+/* line 159, ../sass/screen.scss */
+.reporter {
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+  padding-left: 1rem;
+  position: relative;
+  top: -11rem;
+}
+
+/* line 168, ../sass/screen.scss */
+#top_2 {
+  background: url(../Images/phone.jpg);
+  background-size: 100% 100%;
+}
+
+/* line 173, ../sass/screen.scss */
+#top_2::after {
+  background: linear-gradient(135deg, #002f4b, #417711);
+}
+
+/* line 177, ../sass/screen.scss */
+#top_3 {
+  background: url(../Images/group.jpg);
+  background-size: 100% 100%;
+}
+
+/* line 182, ../sass/screen.scss */
+#top_3::after {
+  background: linear-gradient(135deg, #292484, #a83279);
+}
+
+/* line 186, ../sass/screen.scss */
+#past_news {
+  width: 100%;
+  height: 12rem;
+  position: relative;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+/* line 196, ../sass/screen.scss */
+#scroll_1,
+#scroll_2,
+#scroll_3 {
+  display: inline-block;
+  width: 19rem;
+  margin-right: -4px;
+}
+
+/* line 202, ../sass/screen.scss */
+#scroll_1 {
+  background: url(../Images/reddit.jpg);
+  background-size: 100% 100%;
+}
+
+/* line 207, ../sass/screen.scss */
+#scroll_1::after {
+  background: linear-gradient(135deg, #292484, #dc4225);
+}
+
+/* line 211, ../sass/screen.scss */
+#scroll_2 {
+  background: url(../Images/win8.jpg);
+  background-size: 100% 100%;
+}
+
+/* line 216, ../sass/screen.scss */
+#scroll_2::after {
+  background: linear-gradient(135deg, #e0be00, #dc4225);
+}
+
+/* line 220, ../sass/screen.scss */
+#scroll_3 {
+  background: url(../Images/smartwatch.jpg);
+  background-size: 100% 100%;
+}
+
+/* line 225, ../sass/screen.scss */
+#scroll_3::after {
+  background: linear-gradient(135deg, #417711, #dc4225);
+}

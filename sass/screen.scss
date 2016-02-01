@@ -1,0 +1,227 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+$dark-red:#fa4b2a;
+$white:#fff;
+$black:#333;
+$blue:#292484;
+$orange:#dc4225;
+$darkblue:#002f4b;
+$green:#417711;
+$violet:#a83279;
+$yellow:#e0be00;
+body {
+    margin: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#head_wrapper {
+    width: 100%;
+    height: 4rem;
+    background-color: $dark-red;
+    position: fixed;
+    top: 0;
+}
+
+.ham_burg {
+    width: 2rem;
+    height: 1.5rem;
+    text-align: center;
+    margin: 1rem 0.5rem;
+    float: left;
+    .ham_burg_div {
+        margin: 0.3rem;
+        width: 100%;
+        height: 0.3rem;
+        background-color: $white;
+    }
+}
+
+.ham_burg:hover {
+    cursor: pointer;
+}
+
+.logo {
+    width: 60%;
+    display: inline-block;
+}
+
+.logo_image {
+    width: 100%;
+    height: 4rem;
+}
+
+.line {
+    width: 0.1rem;
+    height: 3.5rem;
+    float: right;
+    background-color: $white;
+    margin: 0.3rem;
+}
+
+.article {
+    float: right;
+    color: $white;
+    :hover {
+        cursor: pointer;
+    }
+}
+
+.count {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.slide_left {
+    position: absolute;
+    right: -13.5rem;
+    top: 4rem;
+    bottom: 0px;
+    width: 12.5rem;
+    background-color: $black;
+    color: white;
+    z-index: 3;
+}
+
+.slide_right {
+    position: absolute;
+    left: -13.5rem;
+    top: 60px;
+    bottom: 0px;
+    width: 12.5rem;
+    background-color: $black;
+    color: white;
+    z-index: 2;
+}
+
+.ham_burg_icon {
+    color: white;
+    float: left;
+}
+
+#content_wrapper {
+    width: 100%;
+    height: 62.5rem;
+    margin-top: 3rem;
+}
+
+.breaking_news {
+    width: 100%;
+    height: 11rem;
+}
+
+.top_news {
+    position: relative;
+    height: 11rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.top_news::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+}
+
+#top_1 {
+    background: url(../Images/hooverdam.jpg);
+    background-size: 100% 100%;
+}
+
+#top_1::after {
+    background: linear-gradient(135deg, $blue, $orange);
+}
+
+.news_heading {
+    padding: 2rem 1rem;
+    font-size: 1.4rem;
+    color: $white;
+    text-align: left;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -11rem;
+}
+
+.reporter {
+    font-size: 1rem;
+    color: $white;
+    text-align: left;
+    padding-left: 1rem;
+    position: relative;
+    top: -11rem;
+}
+
+#top_2 {
+    background: url(../Images/phone.jpg);
+    background-size: 100% 100%;
+}
+
+#top_2::after {
+    background: linear-gradient(135deg, $darkblue, $green);
+}
+
+#top_3 {
+    background: url(../Images/group.jpg);
+    background-size: 100% 100%;
+}
+
+#top_3::after {
+    background: linear-gradient(135deg, $blue, $violet);
+}
+
+#past_news {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+#scroll_1,
+#scroll_2,
+#scroll_3 {
+    display: inline-block;
+    width: 19rem;
+    margin-right: -4px;
+}
+
+#scroll_1 {
+    background: url(../Images/reddit.jpg);
+    background-size: 100% 100%;
+}
+
+#scroll_1::after {
+    background: linear-gradient(135deg, $blue, $orange);
+}
+
+#scroll_2 {
+    background: url(../Images/win8.jpg);
+    background-size: 100% 100%;
+}
+
+#scroll_2::after {
+    background: linear-gradient(135deg, $yellow, $orange);
+}
+
+#scroll_3 {
+    background: url(../Images/smartwatch.jpg);
+    background-size: 100% 100%;
+}
+
+#scroll_3::after {
+    background: linear-gradient(135deg, $green, $orange);
+}
