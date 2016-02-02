@@ -7,17 +7,15 @@
     <title>The Verge</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/slideLeft.js"></script>
-    <script type="text/javascript" src="js/slideRight.js"></script>
 </head>
 
-<body>
+<body id="body_wrap">
     <div id="wrapper">
         <header id="head_wrapper">
             <div class="ham_burg">
-                <i class="fa fa-bars fa-2x ham_burg_icon" ></i>
+                <i id="nav_bar" value="nothing" class="fa fa-bars fa-2x ham_burg_icon"></i>
             </div>
-            <div class="article">
+            <div id="news_list" class="article">
                 <p class="count">9</p>
                 <p>New Articles</p>
             </div>
@@ -27,53 +25,37 @@
                 <img src="Images/logo.png" class="logo_image">
             </div>
         </header>
-        <!-- <div class="slide_left" id="slide_left">
-           <!-- <div>Settings
-                <hr>
+        <div class="slide_left" id="nav_bar_list">
+            <div id="login">
+                <img src="./Images/propic.jpg" id="profile"> LOGIN | SIGNUP
             </div>
-            <div>About
-                <hr>
+            <div class="nav_item">Home
             </div>
-            <div>Contact</div> -->
-    </div> -->
-    <div class="slide_right" id="slide_right">
-        <div>Home
-            <hr>
+            <div class="nav_item">Long Form
+            </div>
+            <div class="nav_item">Reviews
+            </div>
+            <div class="nav_item">Video
+            </div>
+            <div class="nav_item">Tech
+            </div>
+            <div class="nav_item">Entertainment
+            </div>
+            <div class="nav_item">Cars
+            </div>
+            <div class="nav_item">Design
+            </div>
+            <div class="nav_item">US & World
+            </div>
+            <div class="nav_item">Forums
+            </div>
+            <div class="nav_item">Search
+            </div>
+            <div class="nav_item">More Sections
+            </div>
         </div>
-        <div>Long Form
-            <hr>
+        <div id="news_articles" class="slide_right">
         </div>
-        <div>Reviews
-            <hr>
-        </div>
-        <div>Video
-            <hr>
-        </div>
-        <div>Tech
-            <hr>
-        </div>
-        <div>Entertainment
-            <hr>
-        </div>
-        <div>Cars
-            <hr>
-        </div>
-        <div>Design
-            <hr>
-        </div>
-        <div>US & World
-            <hr>
-        </div>
-        <div>Forums
-            <hr>
-        </div>
-        <div>Search
-            <hr>
-        </div>
-        <div>More Sections
-            <hr>
-        </div>
-    </div>
     </div>
     <div id="content_wrapper">
         <div class="trending_news">
@@ -101,13 +83,31 @@
                     By Michael Zelenko
                 </p>
             </div>
-        </div>
-        <div id="past_news">
-            <div id="scroll_1" class="top_news">
-            </div>
-            <div id="scroll_2" class="top_news">
-            </div>
-            <div id="scroll_3" class="top_news">
+            <div id="past_news">
+                <div class="breaking_news_scroll">
+                    <div id="scroll_1" class="top_news">
+                    </div>
+                    <h2 class="news_heading">Airmail for iOS is here: the email app that can do everything</h2>
+                    <p class="reporter">
+                        By Lizzie Plaugic
+                    </p>
+                </div>
+                <div class="breaking_news_scroll">
+                    <div id="scroll_2" class="top_news">
+                    </div>
+                    <h2 class="news_heading">Airmail for iOS is here: the email app that can do everything</h2>
+                    <p class="reporter">
+                        By Lizzie Plaugic
+                    </p>
+                </div>
+                <div class="breaking_news_scroll">
+                    <div id="scroll_3" class="top_news">
+                    </div>
+                    <h2 class="news_heading">Airmail for iOS is here: the email app that can do everything</h2>
+                    <p class="reporter">
+                        By Lizzie Plaugic
+                    </p>
+                </div>
             </div>
         </div>
         <div class="news_section_1">
@@ -158,6 +158,8 @@
         </div>
     </footer>
     </div>
+    </div>
+    <script type="text/javascript" src="js/slide.js"></script>
 </body>
 
 </html>

@@ -67,19 +67,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 body {
   margin: 0;
   font-size: 16px;
   overflow-x: hidden;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 #wrapper {
   width: 100%;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 #head_wrapper {
   width: 100%;
   height: 4rem;
@@ -88,7 +88,7 @@ body {
   top: 0;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .ham_burg {
   width: 2rem;
   height: 1.5rem;
@@ -96,7 +96,7 @@ body {
   margin: 1rem 0.5rem;
   float: left;
 }
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .ham_burg .ham_burg_div {
   margin: 0.3rem;
   width: 100%;
@@ -104,24 +104,24 @@ body {
   background-color: white;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 .ham_burg:hover {
   cursor: pointer;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .logo {
   width: 60%;
   display: inline-block;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .logo_image {
   width: 100%;
   height: 4rem;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .line {
   width: 0.1rem;
   height: 3.5rem;
@@ -130,66 +130,122 @@ body {
   margin: 0.3rem;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .article {
   float: right;
   color: white;
 }
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .article :hover {
   cursor: pointer;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .count {
   font-size: 2rem;
   text-align: center;
 }
 
-/* line 83, ../sass/screen.scss */
-.slide_left {
+/*.slide_left {
+    position: absolute;
+    right: -13.5rem;
+    top: 4rem;
+    bottom: 0px;
+    width: 12.5rem;
+    background-color: $grey;
+    color: white;
+    z-index: 3;
+}*/
+/* line 96, ../sass/screen.scss */
+#nav_bar_list {
   position: absolute;
-  right: -13.5rem;
-  top: 4rem;
-  bottom: 0px;
-  width: 12.5rem;
-  background-color: #333333;
-  color: white;
-  z-index: 3;
-}
-
-/* line 94, ../sass/screen.scss */
-.slide_right {
-  position: absolute;
-  left: -13.5rem;
-  top: 60px;
+  top: 0px;
   bottom: 0px;
   width: 12.5rem;
   background-color: #333333;
   color: white;
   z-index: 2;
+  border-right: 2px solid #dc4225;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
+.slide_left {
+  left: -13.5rem;
+}
+
+/* line 113, ../sass/screen.scss */
+.slider_left {
+  left: 0rem;
+}
+
+/* line 117, ../sass/screen.scss */
+#login {
+  height: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  border-bottom: 1px solid white;
+  background-color: black;
+}
+
+/* line 125, ../sass/screen.scss */
+#login:hover, .nav_item:hover {
+  color: #dc4225;
+}
+
+/* line 128, ../sass/screen.scss */
+#profile {
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  margin: 1rem 0 0 1rem;
+}
+
+/* line 135, ../sass/screen.scss */
+.nav_item {
+  height: 3rem;
+  line-height: 3rem;
+}
+
+/* line 141, ../sass/screen.scss */
+#news_articles {
+  position: absolute;
+  top: 0rem;
+  bottom: 0rem;
+  width: 12.5rem;
+  background-color: white;
+  z-index: 2;
+}
+
+/* line 151, ../sass/screen.scss */
+.slide_right {
+  right: -13.5rem;
+}
+
+/* line 155, ../sass/screen.scss */
+.slider_right {
+  right: 0rem;
+}
+
+/* line 159, ../sass/screen.scss */
 .ham_burg_icon {
   color: white;
   float: left;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 #content_wrapper {
   width: 100%;
   height: 62.5rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .breaking_news {
   width: 100%;
   height: 11rem;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .top_news {
   position: relative;
   height: 11rem;
@@ -198,7 +254,7 @@ body {
   width: 100%;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .top_news::after {
   content: '';
   position: absolute;
@@ -209,18 +265,18 @@ body {
   opacity: 0.7;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #top_1 {
   background: url(../Images/hooverdam.jpg);
   background-size: 100% 100%;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #top_1::after {
   background: linear-gradient(135deg, #292484, #dc4225);
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .news_heading {
   padding: 2rem 1rem;
   font-size: 1.4rem;
@@ -232,7 +288,7 @@ body {
   top: -11rem;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .reporter {
   font-size: 1rem;
   color: white;
@@ -242,38 +298,48 @@ body {
   top: -11rem;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
+.breaking_news_scroll {
+  display: inline-block;
+  width: 19rem;
+  margin-right: -4px;
+  height: 11rem;
+  white-space: normal;
+}
+
+/* line 230, ../sass/screen.scss */
 #top_2 {
   background: url(../Images/phone.jpg);
   background-size: 100% 100%;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 #top_2::after {
   background: linear-gradient(135deg, #002f4b, #417711);
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 #top_3 {
   background: url(../Images/group.jpg);
   background-size: 100% 100%;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #top_3::after {
   background: linear-gradient(135deg, #292484, #a83279);
 }
 
-/* line 186, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 #past_news {
   width: 100%;
   height: 12rem;
   position: relative;
+  overflow-y: hidden;
   overflow-x: scroll;
   white-space: nowrap;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 #scroll_1,
 #scroll_2,
 #scroll_3 {
@@ -282,35 +348,35 @@ body {
   margin-right: -4px;
 }
 
-/* line 202, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #scroll_1 {
   background: url(../Images/reddit.jpg);
   background-size: 100% 100%;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 #scroll_1::after {
   background: linear-gradient(135deg, #292484, #dc4225);
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 #scroll_2 {
   background: url(../Images/win8.jpg);
   background-size: 100% 100%;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 #scroll_2::after {
   background: linear-gradient(135deg, #e0be00, #dc4225);
 }
 
-/* line 220, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #scroll_3 {
   background: url(../Images/smartwatch.jpg);
   background-size: 100% 100%;
 }
 
-/* line 225, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 #scroll_3::after {
   background: linear-gradient(135deg, #417711, #dc4225);
 }
