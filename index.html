@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Verge</title>
+    <script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -13,7 +15,7 @@
     <div id="wrapper">
         <header id="head_wrapper">
             <div class="ham_burg">
-                <i id="nav_bar" value="nothing" class="fa fa-bars fa-2x ham_burg_icon"></i>
+                <i id="nav_bar" value="nothing" class="fa fa-bars fa-lg ham_burg_icon"></i>
             </div>
             <div id="news_list" class="article">
                 <p class="count">9</p>
@@ -58,7 +60,9 @@
         </div>
         <div id="unclick_right" class="hide_right">
         <div id="news_articles" class="slide_right">
+
             <div id="article_of_day" class="days_article">
+
                 <div id="date_head" class="head_date">
                     <h3>FEBRUARY 02,2016</h3>
                 </div>
@@ -85,54 +89,61 @@
     </div>
     <div id="content_wrapper">
         <div class="trending_news">
+        <a href="#">
             <div class="breaking_news">
+        <a href="#">
                 <div id="top_1" class="top_news">
                 </div>
                 <h2 class="news_heading">The Valley Below: San Francisco is keeping Yosemite Valley’s lost twin under water </h2>
                 <p class="reporter">
                     By Michael Zelenko
-                </p>
+                </p></a>
             </div>
             <div class="breaking_news">
+            <a href="#">
                 <div id="top_2" class="top_news">
                 </div>
                 <h2 class="news_heading">Airmail for iOS is here: the email app that can do everything</h2>
                 <p class="reporter">
                     By Lizzie Plaugic
-                </p>
+                </p></a>
             </div>
             <div class="breaking_news">
+            <a href="#">
                 <div id="top_3" class="top_news">
                 </div>
                 <h2 class="news_heading">Hannibal Buress could rescue Spotify’s boring new 'radio' series</h2>
                 <p class="reporter">
                     By Michael Zelenko
-                </p>
+                </p></a>
             </div>
             <div id="past_news">
                 <div class="breaking_news_scroll">
+                <a href="#">
                     <div id="scroll_1" class="top_news">
                     </div>
                     <h2 class="news_heading">Airmail for iOS is here: the email app that can do everything</h2>
                     <p class="reporter">
                         By Lizzie Plaugic
-                    </p>
+                    </p></a>
                 </div>
                 <div class="breaking_news_scroll">
+                <a href="#">
                     <div id="scroll_2" class="top_news">
                     </div>
                     <h2 class="news_heading">Airmail for iOS is here: the email app that can do everything</h2>
                     <p class="reporter">
                         By Lizzie Plaugic
-                    </p>
+                    </p></a>
                 </div>
                 <div class="breaking_news_scroll">
+                <a href="#">
                     <div id="scroll_3" class="top_news">
                     </div>
                     <h2 class="news_heading">Airmail for iOS is here: the email app that can do everything</h2>
                     <p class="reporter">
                         By Lizzie Plaugic
-                    </p>
+                    </p></a>
                 </div>
             </div>
         </div>
@@ -208,16 +219,17 @@
             </ul>
         </div>
         <div class="see_all_news">
+           <a href="#"> SEE ALL NEWS</a>
         </div>
     </div>
     
-        <div class="back_to_top"><a href="#top">BACK TO TOP ^</a>
+        <div id="scroll" class="back_to_top">BACK TO TOP ^
         </div>
         <footer id="foot_wrapper">
         <div class="search_box">
             <input type="text" placeholder="Search articles and products" class="search">
         </div>
-        <div class="links_col_1">
+        <div class="links_col links_col_1">
             
             <div class="links_item">Long Form
             </div>
@@ -243,7 +255,7 @@
             
             
         </div>
-        <div class="links_col_2">
+        <div class="links_col links_col_2">
         <div class="links_item">Site Status
             </div>
             
@@ -259,12 +271,52 @@
             </div>
            
         </div>
-        <div class="links_social">
+         <div class="links col links_col_3">
+        <div class="links_item">Facebook
+            </div>
+            
+            <div class="links_item">Twitter
+            </div>
+            <div class="links_item">Tumblr
+            </div>
+            <div class="links_item">Youtube
+            </div>
+            <div class="links_item">Instagram
+            </div>
+            <div class="links_item">Subscribe
+            </div>
+           
         </div>
-        <div class="vix_corner">
+        <div class="links_social">
+        <ul>
+            <li class="social_icons">
+                <i class="fa fa-facebook "></i>
+            </li>
+            <li class="social_icons">
+                <i class="fa fa-twitter "></i>
+            </li>
+            <li class="social_icons">
+                <i class="fa fa-tumblr "></i>
+            </li>
+            <li class="social_icons">
+                <i class="fa fa-youtube-play "></i>
+            </li>
+            <li class="social_icons">
+                <i class="fa fa-instagram "></i>
+            </li>
+            <li class="social_icons">
+                <i class="fa fa-rss "></i>
+            </li>
+        </ul>
+
+        </div>
+        <div class="vox_corner">
+        <img src="./Images/vox-logo.png" alt="" class="foot_logo">
+        <p>2016 <span>VOX MEDIA</span>, Inc All rights reserved</p>
         </div>
     </footer>
     <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
 </body>
 
 </html>
