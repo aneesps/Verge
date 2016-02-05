@@ -1,0 +1,100 @@
+@import "partials/_variables.scss";
+$white-background:$white;
+$nav_list_hover:$orange;
+#unclick_right,
+#unclick_left {
+    background: linear-gradient(135deg, $black, $white-background);
+    opacity: 0.9;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.sliders {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 15rem;
+    z-index: 2;
+}
+
+#nav_bar_list {
+    @extend .sliders;
+    background-color: $grey;
+    color: white;
+    border-right: 2px solid $nav_list_hover;
+}
+
+.hide_left {
+    left: -13.5rem;
+    width: 12.5rem;
+}
+
+.expand_left {
+    left: 0;
+    width: 100%;
+}
+
+.slide_left {
+    left: -13.5rem;
+    transition: 1s;
+}
+
+.slider_left {
+    left: 0rem;
+    transition: 1s;
+}
+
+#login {
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    border-bottom: 1px solid $white;
+    background-color: $black;
+}
+
+#login:hover,
+.nav_item:hover {
+    color: $nav_list_hover;
+}
+
+#profile {
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    margin: 1rem 0 0 1rem;
+}
+
+.nav_item {
+    height: 3rem;
+    line-height: 3rem;
+    background-color: $grey;
+    text-transform: uppercase;
+}
+
+#news_articles {
+    @extend .sliders;
+    background-color: $white-background;
+    border-left: 2px solid $nav_list_hover;
+}
+
+.hide_right {
+    width: 15rem;
+    right: -15.5rem;
+}
+
+.expand_right {
+    width: 100%;
+    right: 0;
+}
+
+.slide_right {
+    right: -15.5rem;
+    transition: 1s;
+}
+
+.slider_right {
+    right: 0rem;
+    transition: 1s;
+}

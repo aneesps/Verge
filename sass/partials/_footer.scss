@@ -1,0 +1,71 @@
+
+@import "partials/_variables.scss";
+$icon-background:$white;
+#foot_wrapper {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: $black;
+}
+
+.search_box {
+    padding: 2rem 0;
+}
+
+.search {
+    width: 80%;
+    margin: 0% 10%;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+.links_col_1,
+.links_col_2 {
+    display: inline-block;
+    width: 39%;
+    background-color: $black;
+    vertical-align: top;
+    margin-left: 1.5rem;
+}
+
+.links_item {
+    color: $footergrey;
+    padding: 1rem 0.5rem 0 0;
+    &:hover {
+        color: $white;
+    }
+}
+
+.links_social {
+    ul {
+        text-align: center;
+    }
+}
+
+.social_icons {
+    display: inline-block;
+    background-color: $icon-background;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin: 2rem 0.2rem;
+    text-align: center;
+}
+
+.vox_corner {
+    text-align: center;
+    padding-bottom: 2.1rem;
+    img {
+        width: 9.5rem;
+        height: 9.5rem;
+        margin-top: -3.1rem;
+    }
+    p {
+        text-align: center;
+        color: $white;
+        margin-top: -3.1rem;
+    }
+    span {
+        color: $dark-orange;
+    }
+}
